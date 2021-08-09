@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-    //  squares: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    //  squares: [0, 1, 2, 3, 4, 5, 6, 7, 8] Ниже способ лучше.
         squares: Array(9).fill(null),
         count: 0
     }
