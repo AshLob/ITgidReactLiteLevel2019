@@ -24,20 +24,10 @@ class App extends React.Component {
           <h1>{this.state.go}</h1>
           <h2>{3+7}</h2>
         </div>
-        <div>{Math.random()}</div>
-        <div>{this.test()}</div>
-        <div>{a}</div>      
-        <input defaultValue="222"/>
-        <div>&#8364;</div>
-        <hr />
-        <div>{true}</div>
-        <hr />
-        {/* <div>{...b}</div> */}
-        <ul>
-          {vvv.map(elem => {
-            return <li key={elem}>{elem}</li>
-          } )}
-        </ul>
+        <h3>Случайное число от 50 до 60: </h3>
+        <div>{Math.round(10*Math.random()+50)}</div>
+        <div style={{backgroundColor: '#3366CC'}}>Тест </div>
+
       </div>
     )
   }
