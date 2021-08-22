@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import {BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 class App extends React.Component {
   constructor(props) {
@@ -11,6 +12,14 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
+        <ul>
+          <li><a href="/">Main page</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contacts">Contacts</a></li>                    
+        </ul>
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
 
       </div>
     );
